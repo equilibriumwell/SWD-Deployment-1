@@ -2,7 +2,7 @@ import { CiSearch } from 'react-icons/ci';
 import { Link } from 'react-router-dom';
 import { BsPlusLg } from 'react-icons/bs';
 import { MdClose } from 'react-icons/md';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import NoteItem from '../components/NoteItem';
 
@@ -21,7 +21,7 @@ const Notes = ({ notes }) => {
     );
   };
 
-  useEffect(handleSearch, [text]);
+  //   useEffect(handleSearch, [text]);
 
   return (
     <section>
